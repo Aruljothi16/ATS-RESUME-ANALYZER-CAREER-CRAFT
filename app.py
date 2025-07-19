@@ -58,7 +58,7 @@ avs.add_vertical_space(4)
 # Offerings Section
 col1, col2 = st.columns([2, 3])
 with col1:
-    img1 = Image.open("images/i2.png")
+    img1 = Image.open("image/i2.png")
     st.image(img1, use_column_width=True)
 with col2:
     st.header("Wide Range of Offerings")
@@ -91,7 +91,7 @@ with col1:
         else:
             st.warning("⚠️ Please upload a resume and enter a job description.")
 with col2:
-    img2 = Image.open("images/icon6.jpg")
+    img2 = Image.open("image/icon6.jpg")
     st.image(img2, use_column_width=True)
 
 avs.add_vertical_space(4)
@@ -99,7 +99,7 @@ avs.add_vertical_space(4)
 # FAQ Section
 col1, col2 = st.columns([2, 3])
 with col1:
-    img3 = Image.open("images/icon5.png")
+    img3 = Image.open("image/icon5.png")
     st.image(img3, use_column_width=True)
 with col2:
     st.markdown("<h1 style='text-align: center;'>📚 FAQ</h1>", unsafe_allow_html=True)

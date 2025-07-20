@@ -57,7 +57,7 @@ with col2:
 avs.add_vertical_space(4)
 
 # Offerings Section
-col1, col2 = st.columns([2, 3])
+col1, col2 = st.columns([3, 2])
 with col1:
     img1 = Image.open("image/i2.png")
     st.image(img1, use_container_width=True)

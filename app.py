@@ -51,7 +51,7 @@ with col1:
     Introducing CareerCraft, an ATS-Optimized Resume Analyzer — your ultimate solution for optimizing job applications and accelerating career growth. Our innovative platform leverages advanced ATS technology to provide job seekers with valuable insights into their resume's compatibility with job descriptions. From resume optimization and skill enhancement to career progression guidance, CareerCraft empowers users to stand out in today's competitive job market. Streamline your job application process, enhance your skills, and navigate your career path with confidence. Join CareerCraft today and unlock new opportunities for professional success!
     </p>""", unsafe_allow_html=True)
 with col2:
-    st.image('https://cdn.dribbble.com/userupload/12500996/file/original-b458fe398a6d7f4e9999ce66ec856ff9.gif', use_column_width=True)
+    st.image('https://cdn.dribbble.com/userupload/12500996/file/original-b458fe398a6d7f4e9999ce66ec856ff9.gif', use_container_width=True)
 
 avs.add_vertical_space(4)
 
@@ -59,7 +59,7 @@ avs.add_vertical_space(4)
 col1, col2 = st.columns([2, 3])
 with col1:
     img1 = Image.open("image/i2.png")
-    st.image(img1, use_column_width=True)
+    st.image(img1, use_container_width=True)
 with col2:
     st.header("Wide Range of Offerings")
     st.write("- ATS-Optimized Resume Analysis")
@@ -92,7 +92,7 @@ with col1:
             st.warning("⚠️ Please upload a resume and enter a job description.")
 with col2:
     img2 = Image.open("image/icon6.jpg")
-    st.image(img2, use_column_width=True)
+    st.image(img2, use_container_width=True)
 
 avs.add_vertical_space(4)
 
@@ -100,7 +100,7 @@ avs.add_vertical_space(4)
 col1, col2 = st.columns([2, 3])
 with col1:
     img3 = Image.open("image/icon5.png")
-    st.image(img3, use_column_width=True)
+    st.image(img3, use_container_width=True)
 with col2:
     st.markdown("<h1 style='text-align: center;'>📚 FAQ</h1>", unsafe_allow_html=True)
     st.markdown("**Q: How does CareerCraft analyze resumes and job descriptions?**")

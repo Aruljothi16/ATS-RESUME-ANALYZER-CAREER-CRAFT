@@ -87,7 +87,28 @@ with col1:
                 resume_text = input_pdf_text(uploaded_file)
                 response = get_gemini_response(resume_text, jd)
                 st.subheader("🎯 ATS Analysis Result")
-                st.write(response)
+
+                # Optimized and formatted display
+                if response:
+                    sections = response.strip().split("\n\n")
+                    for section in sections:
+                        if "Percentage Match" in section:
+                            st.subheader("✅ Percentage Match")
+                            st.success(section.replace("Percentage Match:", "").strip())
+                        elif "Missing Keywords" in section:
+                            st.subheader("❌ Missing Keywords")
+                            keywords = section.replace("Missing Keywords:", "").strip()
+                            if keywords:
+                                st.markdown(f"<p style='color: red;'>{keywords}</p>", unsafe_allow_html=True)
+                            else:
+                                st.markdown("<p style='color: green;'>None! Your resume covers all important keywords.</p>", unsafe_allow_html=True)
+                        elif "Profile Summary" in section:
+                            st.subheader("🧾 Profile Summary")
+                            st.markdown(f"<div style='text-align: justify;'>{section.replace('Profile Summary:', '').strip()}</div>", unsafe_allow_html=True)
+                        else:
+                            st.write(section)
+                else:
+                    st.error("⚠️ Could not parse the response from Gemini.")
         else:
             st.warning("⚠️ Please upload a resume and enter a job description.")
 with col2:

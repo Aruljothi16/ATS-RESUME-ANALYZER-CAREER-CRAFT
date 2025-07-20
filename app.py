@@ -9,7 +9,7 @@ from PIL import Image
 # Load environment variables
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-model = genai.GenerativeModel('gemini-1.5-pro')  # fallback to available model if 2.5 isn't supported
+model = genai.GenerativeModel('gemini-2.5-flash')  # fallback to available model if 2.5 isn't supported
 
 # Function to get response from Gemini
 def get_gemini_response(resume_text, jd_text):

@@ -115,4 +115,4 @@ with col2:
     st.markdown("**Q: Is CareerCraft suitable for both entry-level and experienced professionals?**")
     st.markdown("A: Absolutely! CareerCraft caters to job seekers at all career stages, offering tailored insights and guidance to enhance their resumes and advance their careers.")
 
-avs.add_vertical_space(3)   here in this give the result from the model ian optimized and undestandable way
+avs.add_vertical_space(3)  

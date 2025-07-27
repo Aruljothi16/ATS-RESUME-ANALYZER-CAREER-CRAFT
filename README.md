@@ -19,3 +19,6 @@ CareerCraft is a Streamlit-based web application that leverages Google's Gemini 
 
 
 Project URL: https://ats-resume-analyzer-career-craft-a5vudruo9avoxsesjsxjja.streamlit.app/
+
+
+Note: due to streamlit clouds free version you have to wake the app up. click the Yes, get the app back up button.
